@@ -118,8 +118,7 @@
 
 	var play = function(e) {
 		if (e.keyCode === 90 || e.keyCode === 88) {
-			// var ctx = document.getElementById('key-' + e.keyCode);
-			// animate(ctx);
+			animate(document.getElementById('key-' + e.keyCode));
 			changeOctave(e.keyCode);
 			return;
 		}
