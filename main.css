@@ -62,7 +62,8 @@ h2 {
 .white-key span ,.black-key span {
     position: absolute;
     bottom: 0;
-    left:20px;
+    left:0;
+    right: 0;
     text-transform: uppercase;
 }
 
