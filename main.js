@@ -109,8 +109,17 @@
 		createKeyboard(mappedKeys,octave)
 	}
 
+	function animate(ctx) {
+		ctx.classList.add('active');
+		setTimeout(function() {
+			ctx.classList.remove('active');
+		}, 200)
+	}
+
 	var play = function(e) {
 		if (e.keyCode === 90 || e.keyCode === 88) {
+			// var ctx = document.getElementById('key-' + e.keyCode);
+			// animate(ctx);
 			changeOctave(e.keyCode);
 			return;
 		}
